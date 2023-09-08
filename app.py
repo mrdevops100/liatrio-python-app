@@ -1,11 +1,11 @@
 from flask import Flask
-import datetime
+from datetime import datetime
 
 app = Flask(__name__)
 
 @app.route('/')
 def get_timestamp():
-    current_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    current_date = now.strftime("%m/%d/%Y, %H:%M:%S")
     data = {
         "message" : "Automate all things..!!",
         "timestamp" : current_date
